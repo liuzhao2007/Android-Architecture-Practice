@@ -17,14 +17,17 @@ public class TextViewModel extends ViewModel {
 
     public LiveData<Number> getNumber() {
         if (number == null) {
+            // will only be loaded once
             number = new MutableLiveData<Number>();
-            loadNumber();
-            Log.i("lz", "loadNumber init");
+            loadNumberAsync();
+            Log.i("lz", "loadNumberAsync init only Once");
         }
         return number;
     }
 
-    private void loadNumber() {
+    private void loadNumberAsync() {
+        // Do an asyncronous operation to fetch data.
+
         Number num = new Number();
         num.name = "时间";
         num.num = 101;

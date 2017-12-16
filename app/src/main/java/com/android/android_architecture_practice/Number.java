@@ -9,5 +9,4 @@ public class Number {
     public String name;
 
     public int num;
-
 }
