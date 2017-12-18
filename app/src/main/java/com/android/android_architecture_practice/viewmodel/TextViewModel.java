@@ -34,4 +34,12 @@ public class TextViewModel extends ViewModel {
         number.setValue(num);
     }
 
+    /**
+     * Test when will be called
+     */
+    @Override
+    protected void onCleared() {
+        super.onCleared();
+        Log.i("lz", "onCleared");
+    }
 }
