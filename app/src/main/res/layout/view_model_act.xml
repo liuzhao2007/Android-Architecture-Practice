@@ -10,9 +10,9 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.android.android_architecture_practice.MainActivity">
 
-    <Button
-        android:id="@+id/bt"
+    <TextView
+        android:id="@+id/tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="跳转" />
+        android:text="Hello World!" />
 </RelativeLayout>
